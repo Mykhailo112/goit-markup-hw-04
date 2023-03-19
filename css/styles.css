@@ -140,6 +140,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .title-text {
   font-weight: 700;
@@ -303,7 +305,7 @@ img {
 }
 /* ----------Sector 5 index.html--------- */
 .custumers {
-  padding-top: 130px;
+  padding: 130px 15px 120px;
 }
 .custumers-text {
   font-weight: 700;
@@ -369,13 +371,14 @@ img {
   letter-spacing: 0.04em;
   color: var(--color9);
 }
-.filters-btn:hover {
-  color: var(--color5);
-  background-color: var(--color11);
-}
+.filters-btn:hover,
 .filters-btn:focus {
   color: var(--color5);
   background-color: var(--color11);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 1px solid var(--color11);
 }
 .examples-title-list {
   display: flex;
