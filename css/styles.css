@@ -342,14 +342,23 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.custumers-icon:hover,
-.custumers-icon:focus {
+/* .custumers-icon:hover {
   fill: var(--color4);
-}
-.custumers-link:hover,
-.custumers-link:focus {
+} */
+/* .custumers-icon:focus {
+  
+} */
+.custumers-link:hover .custumers-icon {
   border: 1px solid var(--color4);
+  fill: var(--color4);
+  border-radius: 4px;
 }
+.custumers-link:focus .custumers-icon {
+  border: 1px solid var(--color4);
+  fill: var(--color4);
+  border-radius: 4px;
+}
+
 /* ----------Sector 1 portfolio.html--------- */
 .portfolio-section {
   padding: 96px 0 120px 0;
@@ -415,10 +424,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--color3);
 }
-.examples-list:hover,
-.examples-list:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.examples-link {
+  display: block;
 }
 .examples-link:hover,
 .examples-link:focus {
