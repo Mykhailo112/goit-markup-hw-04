@@ -2,16 +2,16 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   background-color: var(--color5);
-  color: var(--color10);
+  color: var(--color3);
 }
 :root {
+  --color1: #4d5ae5;
+  --color2: #2e2f42;
+  --color3: #434455;
+  --color4: #404bbf;
   --color5: #ffffff;
   --color6: #f4f4fd;
   --color7: #e7e9fc;
-  --color8: #2e2f42;
-  --color9: #4d5ae5;
-  --color10: #434455;
-  --color11: #404bbf;
   --gradient-color: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
@@ -59,6 +59,8 @@ img {
 /* ----------Header-------- */
 .header {
   border-bottom: 1px solid var(--color7);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -78,7 +80,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--color9);
+  color: var(--color1);
 }
 .logo-link {
   margin-right: 76px;
@@ -87,7 +89,7 @@ img {
   text-decoration: none;
 }
 .logo-span-header {
-  color: var(--color8);
+  color: var(--color2);
 }
 .list {
   list-style: none;
@@ -104,15 +106,15 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color8);
+  color: var(--color2);
   padding: 24px 0;
   display: block;
 }
 .header-title-item:hover {
-  color: var(--color11);
+  color: var(--color4);
 }
 .header-title-item:focus {
-  color: var(--color11);
+  color: var(--color4);
 }
 .contact-list-title {
   font-style: normal;
@@ -125,23 +127,21 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color10);
+  color: var(--color3);
 }
-.contact-item-list :hover {
-  color: var(--color11);
-}
+.contact-item-list :hover,
 .contact-item-list :focus {
-  color: var(--color11);
+  color: var(--color4);
 }
 /* ----------Sector 1 index.html--------- */
 .title {
-  background: var(--color8);
+  background: var(--color2);
   background-image: var(--gradient-color), url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .title-text {
   font-weight: 700;
@@ -162,7 +162,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--color5);
   cursor: pointer;
-  background-color: var(--color9);
+  background-color: var(--color1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
@@ -170,7 +170,7 @@ img {
 .title-btn:hover,
 .title-btn:focus {
   color: var(--color5);
-  background-color: var(--color11);
+  background-color: var(--color4);
 }
 .title-container {
   max-width: 496px;
@@ -192,7 +192,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color8);
+  color: var(--color2);
 }
 .plan-item {
   margin-bottom: 8px;
@@ -203,9 +203,17 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.plan-icon {
+.plan-div {
   width: 264px;
   height: 112px;
+  background: var(--color6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-icon {
+  width: 64px;
+  height: 64px;
 }
 /* ----------Sector 3 index.html--------- */
 .servises-title-list {
@@ -215,7 +223,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color8);
+  color: var(--color2);
 }
 .servises-title-list {
   margin-bottom: 72px;
@@ -233,7 +241,6 @@ img {
 /* ----------Sector 4 index.html--------- */
 .team {
   background-color: var(--color6);
-  padding-bottom: 110px;
 }
 .team-list {
   background-color: var(--color5);
@@ -248,7 +255,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color8);
+  color: var(--color2);
 }
 .team-heading {
   margin-bottom: 72px;
@@ -265,7 +272,7 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color8);
+  color: var(--color2);
   margin-bottom: 8px;
 }
 .team-text {
@@ -291,7 +298,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: var(--color9);
+  background: var(--color1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,12 +308,9 @@ img {
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background: var(--color11);
+  background: var(--color4);
 }
 /* ----------Sector 5 index.html--------- */
-.custumers {
-  padding: 130px 15px 120px;
-}
 .custumers-text {
   font-weight: 700;
   font-size: 36px;
@@ -314,7 +318,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color8);
+  color: var(--color2);
   margin-bottom: 72px;
 }
 .custumers-list {
@@ -323,20 +327,28 @@ img {
   align-items: center;
   gap: 24px;
 }
-.custumers-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.custumers-icon {
   width: 168px;
   height: 88px;
   fill: #8e8f99;
+  padding: 16px 32px;
+}
+.custumers-link {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
+.custumers-icon:hover,
+.custumers-icon:focus {
+  fill: var(--color4);
+}
 .custumers-link:hover,
 .custumers-link:focus {
-  fill: var(--color11);
-  border: 1px solid var(--color11);
+  border: 1px solid var(--color4);
 }
 /* ----------Sector 1 portfolio.html--------- */
 .portfolio-section {
@@ -369,16 +381,16 @@ img {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--color9);
+  color: var(--color1);
 }
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--color5);
-  background-color: var(--color11);
+  background-color: var(--color4);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border: 1px solid var(--color11);
+  border: 1px solid var(--color4);
 }
 .examples-title-list {
   display: flex;
@@ -394,21 +406,25 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color8);
+  color: var(--color2);
   margin-bottom: 8px;
 }
 .examples-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color10);
+  color: var(--color3);
 }
 .examples-list:hover,
 .examples-list:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .examples-text-div {
   padding: 32px 0;
   padding-left: 16px;
@@ -418,14 +434,13 @@ img {
 }
 /* ---------Footer--------- */
 .footer {
-  background-color: var(--color8);
+  background-color: var(--color2);
+}
+.footer-div {
   display: flex;
 }
 .footer {
   padding: 100px 0;
-}
-.footer-container {
-  margin: 0 120px 0 156px;
 }
 .footer-text {
   font-size: 16px;
@@ -440,6 +455,9 @@ img {
 .logo-span-footer {
   color: var(--color6);
 }
+.footer-soc-div {
+  margin-left: 120px;
+}
 .footer-soc-text {
   font-weight: 500;
   font-size: 16px;
@@ -451,7 +469,7 @@ img {
 .footer-soc-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .footer-soc-item {
   width: 40px;
